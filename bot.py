@@ -39,6 +39,8 @@ def alert_received():
     # customize the behaviour of the bot here
     message = "Hi, I am a Webex Teams bot. Have a great day ☀! "
 
+    print(message)
+
     # uncomment if you are implementing a notifier bot
     '''
     api.messages.create(roomId=WT_ROOM_ID, markdown=message)
@@ -48,6 +50,7 @@ def alert_received():
     # uncomment if you are implementing a controller bot
     WT_ROOM_ID = raw_json['data']['roomId']
     personEmail_json = raw_json['data']['personEmail']
+    print(raw_json)
     if personEmail_json != WT_BOT_EMAIL:
         api.messages.create(roomId=WT_ROOM_ID, markdown=message)
 
