@@ -17,7 +17,7 @@ or implied.
 import requests, urllib
 
 from flask import Flask, request, redirect, url_for, render_template
-from env_var import *
+# from env_var import *
 from werkzeug.utils import secure_filename
 
 import time
