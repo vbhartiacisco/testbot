@@ -35,7 +35,7 @@ def default_route():
     return render_template('mainpage_login.html')
 
 # defining the decorater and route registration for incoming alerts
-@app.route('/', methods=['GET, POST'])
+@app.route('/')
 def alert_received():
     raw_json = request.get_json()
     print(raw_json)
@@ -61,7 +61,7 @@ def alert_received():
     return jsonify({'success': True})
 
 @app.route('/test', methods=['GET, POST'])
-def alert_received():
+def temp():
     raw_json = request.get_json()
     print(raw_json)
 
