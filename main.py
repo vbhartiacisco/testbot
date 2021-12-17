@@ -23,7 +23,7 @@ WT_BOT_TOKEN = os.environ['WT_BOT_TOKEN']
 #WT_ROOM_ID = os.environ['WT_ROOM_ID']
 
 # uncomment next line if you are implementing a controller bot
-WT_BOT_EMAIL = os.environ['']
+WT_BOT_EMAIL = os.environ['WT_BOT_EMAIL']
 
 # start Flask and WT connection
 app = Flask(__name__)
