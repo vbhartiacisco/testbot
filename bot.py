@@ -22,7 +22,7 @@ WT_BOT_TOKEN = "ZjA3ZTg4YWItM2I0OS00ZGRmLTkwOGUtZmJhODFjMWZlZGI3ZTFjZTM3NTEtZGJh
 # uncomment next line if you are implementing a notifier bot
 #WT_ROOM_ID = os.environ['WT_ROOM_ID']
 
-uncomment next line if you are implementing a controller bot
+# uncomment next line if you are implementing a controller bot
 WT_BOT_EMAIL = "testingbot23@webex.bot"
 
 # start Flask and WT connection
