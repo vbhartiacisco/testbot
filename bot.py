@@ -17,13 +17,13 @@ from webexteamssdk import WebexTeamsAPI
 import os
 
 # get environment variables
-WT_BOT_TOKEN = "ZjA3ZTg4YWItM2I0OS00ZGRmLTkwOGUtZmJhODFjMWZlZGI3ZTFjZTM3NTEtZGJh_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f"
+WT_BOT_TOKEN = os.environ['WT_BOT_TOKEN']
 
 # uncomment next line if you are implementing a notifier bot
 #WT_ROOM_ID = os.environ['WT_ROOM_ID']
 
 # uncomment next line if you are implementing a controller bot
-WT_BOT_EMAIL = "testingbot23@webex.bot"
+WT_BOT_EMAIL = os.environ['WT_BOT_EMAIL']
 
 # start Flask and WT connection
 app = Flask(__name__)
