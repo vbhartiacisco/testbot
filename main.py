@@ -32,7 +32,7 @@ api = WebexTeamsAPI(access_token=WT_BOT_TOKEN)
 @app.route('/')
 def default_route():
     print("default route received")
-    return jsonify({'success': True})
+    return render_template('mainpage_login.html')
 
 # defining the decorater and route registration for incoming alerts
 @app.route('/', methods=['GET, POST'])
