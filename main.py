@@ -29,7 +29,7 @@ WT_BOT_EMAIL = os.environ['']
 app = Flask(__name__)
 api = WebexTeamsAPI(access_token=WT_BOT_TOKEN)
 
-@app.route('/')
+@app.route('/temp')
 def default_route():
     print("default route received")
     return render_template('mainpage_login.html')
