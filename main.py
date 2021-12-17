@@ -23,12 +23,15 @@ WT_BOT_TOKEN = os.environ['WT_BOT_TOKEN']
 #WT_ROOM_ID = os.environ['WT_ROOM_ID']
 
 # uncomment next line if you are implementing a controller bot
-WT_BOT_EMAIL = os.environ['WT_BOT_EMAIL']
+WT_BOT_EMAIL = os.environ['']
 
 # start Flask and WT connection
 app = Flask(__name__)
 api = WebexTeamsAPI(access_token=WT_BOT_TOKEN)
 
+@app.route('/')
+def default_route():
+    print("default route received")
 
 # defining the decorater and route registration for incoming alerts
 @app.route('/', methods=['GET, POST'])
